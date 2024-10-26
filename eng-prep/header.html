@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Test Module</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favion.png" type="image/png"/>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<!-- preloader -->
+	<div id="pgloader">
+		<div class="LoaderBalls">
+			<div class="LoaderBalls__item"></div>
+			<div class="LoaderBalls__item"></div>
+			<div class="LoaderBalls__item"></div>
+		</div>
+	</div>
+<!-- End -->
+
+<!-- Modal (Popup) -->
+<div class="modal fade" id="reportbug" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white py-2">
+        <h5 class="modal-title">Report a Bug</h5>
+         <button type="button" class="close closemodal" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">x</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+		  <div class="form-group">
+		    <input type="email" class="form-control" placeholder="Enter Name">
+		  </div>
+		  <div class="form-group">
+		    <input type="text" class="form-control" placeholder="Enter Email">
+		  </div>
+		  <div class="form-group">
+		    <input type="number" class="form-control" placeholder="Contact Number">
+		  </div>
+		  <div class="form-group">
+		    <textarea class="form-control" rows="4" placeholder="Write Your Concern.."></textarea>
+		  </div>
+		</form>
+		<button type="button" class="btn btn-danger w-100" data-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="correctAnswer" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white py-2">
+        <h5 class="modal-title">Correct Answer</h5>
+        <button type="button" class="close closemodal" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">x</span>
+        </button>
+      </div>
+      <div class="modal-body pb-0">
+       	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End -->
+	<nav class="header-main">
+		<div class="container">
+			<div class="navflex">
+				<div class="logo">
+					<img src="img/logo.png">
+				</div>
+				<a href="#" class="toggle-menu" data-toggle-class="active" data-toggle-target=".main-menu, this">
+					<i class="fas fa-align-left"></i></a>
+
+				<ul class="main-menu">
+					<li><a href="#" class="acti ve"><span>Speaking <i class="fas fa-angle-down"></i></span></a> 
+						<ul class="sub-menu">
+							<li><a href="#"><span>Read Aloud</span></a></li>
+							<li><a href="#"><span>Repeat Sentence</span></a></li>
+							<li><a href="#"><span>Describe Image</span></a></li>
+							<li><a href="#"><span>Re-Tell Lecture</span></a></li>
+							<li><a href="#"><span>Answer Short Question</span></a></li>
+						</ul>
+					</li>
+					<li><a href="#"><span>Writing <i class="fas fa-angle-down"></i></span></a>
+						<ul class="sub-menu">
+							<li><a href="#"><span>Summarize writtentext</span></a></li>
+							<li><a href="#"><span>Essay (20 mins)</span></a></li>
+						</ul>
+					</li>
+					<li><a href="#"><span>Reading <i class="fas fa-angle-down"></i></span></a>
+						<ul class="sub-menu">
+							<li><a href="#"><span>Multiple choice, choice single answer</span></a></li>
+							<li><a href="#"><span>Multiple choice, choice multiple answer</span></a></li>
+							<li><a href="#"><span>re-order paragaphs</span></a></li>
+							<li><a href="#"><span>reading: fill in the blanks</span></a></li>
+							<li><a href="#"><span>reading and writing : fill in the blanks</span></a></li>
+						</ul>
+					</li>
+					<li><a href="#"><span>Listening <i class="fas fa-angle-down"></i></span></a>
+						<ul class="sub-menu">
+							<li><a href="#"><span>Summarize spoken text</span></a></li>
+							<li><a href="#"><span>Multiple choice, choose multiple answer</span></a></li>
+							<li><a href="#"><span>fill the blanks</span></a></li>
+							<li><a href="#"><span>highlight the correct summary</span></a></li>
+							<li><a href="#"><span>Multiple choice question single answer</span></a></li>
+							<li><a href="#"><span>Select missing word</span></a></li>
+							<li><a href="#"><span>Highlights incorrect words</span></a></li>
+							<li><a href="#"><span>Write from dictation</span></a></li>
+						</ul>
+					</li>
+					<!-- <li><a href="#"><span>Item 3</span></a></li> -->
+				</ul>
+
+				<div class="menu-setting">
+					<ul>
+						<li><a href="javascript:void(0)">
+						<i class="fas fa-sign-out-alt"></i>
+						<span class="d-md-inline d-none">Logout</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>	
+
+	<section id="section03" class="main_banner">
+	  <div class="container">
+	  	<div class="row">
+	  		<div class="col-md-6">
+	  			<div class="banner-text animate__animated animate__backInLeft animate__delay-1s">
+	  				<h2>INDIA'S NO 1 PTE</h2>
+	  				<h5> CD-IELTS,CELPIP TEST PLATFORM</h5>
+	  				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	  			</div>
+	  		</div>
+	  		<div class="col-md-6">
+	  			<div class="banner-image  animate__animated animate__backInRight animate__delay-1s">
+	  				<img src="img/banner_01.png" class="img-fluid">
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div>
+	  <a href="#section04"><span></span></a>
+	</section>
+	
+	<section id="section04" class="pt-6">
+		<div class="container">
+			<div class="test_module">
+				<div class="test_title">
+					<h4>Real Aloud 
+						<span class="info-bar" data-toggle="tooltip" data-placement="top" title="Show Me How?">
+							<i class="fas fa-info-circle"></i>
+						</span>
+					</h4>
+					<div class="zoominOut">
+						<div class="increaseFont bg-success">A+</div>
+						<div class="decreaseFont bg-danger">A-</div>
+						<div class="resetFont bg-primary">A</div>
+					</div>
+				</div>
+				<div class="test_body">
+					<div class="instruction">
+						<label class="intro-serial">1</label>
+						In the speaking section, at a time, there will only be 10 answers stored. On addition of the 11th answer, the first answer gets deleted automatically.
+					</div>
+					<!-- <div class="instruction">
+						Look at the text below. In 40 seconds, you must read this text aloud as naturally and clearly as possible. You have 40 seconds to read aloud.
+					</div> -->
+					<div class="question_section">
+						<p class="quiz-pra">The moon is the "natural permanent orbiting body" of our planet. There are many other planets in our solar system that have their own orbiting bodies. The moon is the second-largest satellite in our solar system, the first number is for Jupiter's satellite. For our moon, water cannot exist on its surface because it is bombarded with solar radiations because it lacks Earth like atmosphere. The surface of the moon is just like Mars -dry and hostile.</p>
+					</div>
+					<div class="recorder">
+						<h5>Recording Start....</h5>
+						<div class="loading_box">
+							<div class="loading"></div>
+							<div class="loading"></div>
+							<div class="loading"></div>
+							<div class="loading"></div>
+							<div class="loading"></div>
+							<div class="loading"></div>
+						</div>
+					</div>
+					<!-- introduction dialogue -->
+					<div class="intro_overlay">
+						<div class="intro_box">
+						  <div id="infoslider" class="carousel slide" data-ride="carousel">
+						  	<div class="intro_setting">
+							    	<ol class="carousel-indicators">
+								      <li data-target="#infoslider" data-slide-to="0" class="active"></li>
+								      <li data-target="#infoslider" data-slide-to="1"></li>
+								    </ol>
+								   <div class="btn-group intro-btn">
+								   		<button type="button" class="btn btn-primary skipbtn">Skip </button>
+									   	<a class="carousel-control-prev btn btn-primary" href="#infoslider" role="button" data-slide="prev">
+									   		<i class="fas fa-angle-left pr-1"></i> Back
+									    </a>
+									     <a class="carousel-control-next btn btn-primary" href="#infoslider" role="button" data-slide="next"> Next <i class="fas fa-angle-right pl-1"></i>
+									    </a>
+									</div>
+							    </div>
+						    <div class="carousel-inner">
+						      <div class="carousel-item active">
+						        <div class="carousel-content">
+						          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod d ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+						        </div>
+						      </div>
+						      <div class="carousel-item">
+						        <div class="carousel-content">
+						           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ipsum dolor sit amet, </p>
+						        </div>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<!-- end alert -->
+				</div>
+				<div class="test_footer">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="btn-group">
+								  <button type="button" class="btn btn-primary"data-toggle="modal" data-target="#reportbug">report a bug</button>
+								  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#correctAnswer">correct answer</button>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="btn-group page-btn">
+									<button type="button" class="btn btn-primary">Restart</button>
+									<button type="button" class="btn btn-primary">Previous</button>
+									<button type="button" class="btn btn-primary">Next</button>
+									<div class="dropup">
+									    <button type="button" class="btn btn-primary dropdown-toggle mr-0" data-toggle="dropdown">
+									      1 of 100
+									    </button>
+									    <div class="dropdown-menu">
+									      <div class="flexbox">
+									      	<div class="dropdown-item">1</div>
+									      	<div class="dropdown-item">2</div>
+									      	<div class="dropdown-item">3</div>
+									      	<div class="dropdown-item">4</div>
+									      	<div class="dropdown-item">5</div>
+									      	<div class="dropdown-item">6</div>
+									      	<div class="dropdown-item">7</div>
+									      	<div class="dropdown-item">8</div>
+									      	<div class="dropdown-item">9</div>
+									      	<div class="dropdown-item">10</div>
+									      	<div class="dropdown-item">11</div>
+									      	<div class="dropdown-item">12</div>
+									      	<div class="dropdown-item">13</div>
+									      	<div class="dropdown-item">14</div>
+									      	<div class="dropdown-item">15</div>
+									      	<div class="dropdown-item">16</div>
+									      	<div class="dropdown-item">17</div>
+									      	<div class="dropdown-item">18</div>
+									      	<div class="dropdown-item">19</div>
+									      	<div class="dropdown-item">20</div>
+									      </div>
+									    </div>
+								  	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+var submenus = document.querySelectorAll("ul.sub-menu");
+if(submenus.length > 0) for(var i=0; i<submenus.length; i++) {
+    var span = document.createElement('span');
+    span.classList.add('expand');
+    span.innerHTML = "+";
+
+    span.addEventListener('click', function(){
+        this.classList.toggle('active');
+		  this.parentNode.classList.toggle('active');
+    });
+	
+    submenus[i].previousElementSibling.appendChild(span);
+    submenus[i].parentNode.insertBefore(span, submenus[i]);
+}
+
+
+(function() {
+
+	function toggleClasses(classes, obj)
+	{
+		if(!classes) return;
+		if(!obj) return;
+		for(var n=0; n<classes.length; n++) obj.classList.toggle(classes[n].trim());
+	}
+
+	function applyToTargets(targetslist, dototargets, obj, dotoself, dotonext)
+	{
+		if(!targetslist) return;
+		if(!dototargets) return;
+
+		targetslist = targetslist.split(',');
+
+		for(var n=0; n<targetslist.length; n++)
+		{
+			targetslist[n] = targetslist[n].trim();
+			
+			if( (targetslist[n] == 'this' || targetslist[n] == 'self') && obj && dotoself ) dotoself(obj);
+			if(targetslist[n] == 'next' && obj && dotonext ) dotonext(obj.nextElementSibling);
+			else 
+			{
+				var elems = document.querySelectorAll( targetslist[n] );
+				if(elems.length > 0) 
+				{
+					for(var m=0; m<elems.length; m++) 
+					{
+						dototargets(elems[m]); 
+					}
+				}
+			}
+		}
+	}
+
+	var clickToggle = document.querySelectorAll('[data-toggle-class]');
+
+	if(clickToggle.length > 0) 
+	{
+		for(var i=0; i<clickToggle.length; i++) 
+		{
+			clickToggle[i].addEventListener('click', function(e) {
+				e.preventDefault();
+
+				var classes = this.getAttribute('data-toggle-class');
+				if(!classes) return;
+
+				classes = classes.split(',');
+				for(var n=0; n<classes.length; n++) classes[n] = classes[n].trim();
+
+				var targets = this.getAttribute('data-toggle-target');
+
+				if(!targets) toggleClasses(classes, this); //for(var n=0; n<classes.length; n++)  this.classList.toggle(classes[n]);
+				else 
+				{
+					applyToTargets(targets, function(elem){ toggleClasses(classes, elem); }, this, function(elem){ toggleClasses(classes, elem); }, function(elem){ toggleClasses(classes, elem); });
+				}
+			});
+		}
+	}
+})();
+
+</script>
+
+<script type="text/javascript">
+	$(function() {
+  $('.main_banner a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){ 
+		$('#pgloader').fadeOut(2000);
+	});
+</script>
+
+<script>
+  $(document).ready(function(){ 
+		$('.page-btn .dropdown-item').click(function () {
+			$(this).toggleClass('checked');
+		});
+	});         
+</script>
+
+<script type="text/javascript">
+	  $(".flexbox .dropdown-item").click((event) => {
+         event.stopPropagation()
+         let url = event.target.href
+    })
+</script>
+
+<script type="text/javascript">
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+</script>
+
+<script type="text/javascript">
+	$(function() {
+    var header = $(".header-main");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 100) {
+            header.addClass("stickyanimate");
+        } else {
+            header.removeClass("stickyanimate");
+        }
+    });
+});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	    $('#infoslider').carousel({
+	        pause: true,
+	        interval: false
+	    });
+	});
+</script>
+
+<script type="text/javascript">
+	 $(document).ready(function(){ 
+		$('.info-bar').click(function () {
+			$('.intro_overlay').fadeIn(500);
+			$('.instruction').addClass('praHighLight');
+		});
+
+		$('.skipbtn').click(function () {
+			$('.intro_overlay').fadeOut(500);
+			$('.instruction').removeClass('praHighLight');
+		});
+	});   
+</script>
+
+<script type="text/javascript">
+         $(document).ready(function(){        
+           var originalSize = $('.quiz-pra').css('font-size');         
+          // reset        
+           $(".resetFont").click(function(){           
+          $('.quiz-pra').css('font-size', originalSize);         
+           });
+         
+           // Increase Font Size          
+           $(".increaseFont").click(function(){         
+          var currentSize = $('.quiz-pra').css('font-size');         
+          var currentSize = parseFloat(currentSize)*1.2;          
+          $('.quiz-pra').css('font-size', currentSize);         
+          return false;          
+          });        
+      
+           // Decrease Font Size       
+           $(".decreaseFont").click(function(){        
+           var currentFontSize = $('.quiz-pra').css('font-size');        
+           var currentSize = $('.quiz-pra').css('font-size');        
+           var currentSize = parseFloat(currentSize)*0.8;        
+           $('.quiz-pra').css('font-size', currentSize);         
+           return false;         
+           });         
+         });
+         
+    </script>
+
+</body>
+</html>
